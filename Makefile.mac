@@ -1,0 +1,22 @@
+### Makefile		Created      : Sat Oct 13 09:30:25 2012
+###			Last modified: Sat Oct 13 10:14:37 2012
+
+CLASS_DIR=bin/classes
+
+# for mac
+INCLUDE_OPT=-I /System/Library/Frameworks/JavaVM.framework/Headers/ -I include
+
+all:
+	javac -d $(CLASS_DIR) src/main/java/JNIHello.java
+	javah -d src/main/c/include -jni -classpath $(CLASS_DIR) JNIHello
+	gcc -shared -fPIC $(INCLUDE_OPT) -I src/main/c/include -o lib/libJNIHello.dylib src/main/c/JNIHello.c
+
+test:
+	gcc $(INCLUDE_OPT) -I src/main/c/include -o testmain lib/libJNIHello.dylib src/test/testmain.c
+
+run:
+	env LD_LIBRARY_PATH=lib:$LD_LIBRARY_PATH java -classpath bin/classes -Djava.library.path=lib JNIHello
+
+clean:
+	find . -name '*~' | xargs rm
+	rm -f src/main/c/include/*.h bin/classes/* lib/*
