@@ -19,5 +19,5 @@ Detail
 coming soon???
 
 -----
-Takashi Masuyama < mamewotoko@gmail.com >
+Takashi Masuyama < mamewotoko@gmail.com >  
 http://www002.upp.so-net.ne.jp/mamewo/
