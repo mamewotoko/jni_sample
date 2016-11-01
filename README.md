@@ -10,9 +10,10 @@ How to build
 1. copy or link Makefile.linux or Makefile.mac as Makefile
 2. modify JAVA_HOME of Makefile (remove it if JAVA_HOME is defined in environment)
 3. build
-   ```
+
+    ```
     make
-   ```
+    ```
 
 How to run
 -----------
