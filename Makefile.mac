@@ -1,10 +1,11 @@
 ### Makefile		Created      : Sat Oct 13 09:30:25 2012
-###			Last modified: Sat Oct 13 11:50:08 2012
+###			Last modified: Tue Nov 01 20:01:42 2016
 
 CLASS_DIR=bin/classes
 
 # for mac
-INCLUDE_OPT=-I /System/Library/Frameworks/JavaVM.framework/Headers/ -I include
+JAVA_HOME=$(shell /usr/libexec/java_home -v 1.8)
+INCLUDE_OPT=-I $(JAVA_HOME)/include -I $(JAVA_HOME)/include/darwin -I include
 
 all:
 	javac -d $(CLASS_DIR) src/main/java/JNIHello.java

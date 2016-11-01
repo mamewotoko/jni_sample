@@ -1,9 +1,11 @@
 ### Makefile		Created      : Sat Oct 13 09:30:25 2012
-###			Last modified: Sat Oct 13 11:49:59 2012
+###			Last modified: Tue Nov 01 20:04:00 2016
 CLASS_DIR=bin/classes
 
 # for linux
-JAVA_HOME=/opt/jdk1.7.0_05
+
+# get JAVA_HOME from environment
+#JAVA_HOME=/opt/jdk1.7.0_05
 INCLUDE_OPT=-I $(JAVA_HOME)/include/ -I $(JAVA_HOME)/include/linux -I include
 
 all:
