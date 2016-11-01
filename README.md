@@ -1,7 +1,7 @@
 JNI sample [![Build Status](https://travis-ci.org/mamewotoko/jni_sample.svg?branch=master)](https://travis-ci.org/mamewotoko/jni_sample)
 ==========
 
-What?
+Overview
 ------------
 Sample code to call c funtion from Java code with JNI.
 
