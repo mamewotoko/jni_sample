@@ -1,4 +1,4 @@
-JNI sample
+JNI sample [![Build Status](https://travis-ci.org/mamewotoko/jni_sample.svg?branch=master)](https://travis-ci.org/mamewotoko/jni_sample)
 ==========
 
 What?
@@ -21,10 +21,6 @@ How to run
 ```
 
 "hello JNI" is displayed in terminal, if succeeded
-
-Detail
------------
-coming soon???
 
 -----
 Takashi Masuyama < mamewotoko@gmail.com >  
